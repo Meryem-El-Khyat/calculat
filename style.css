@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popping", sans-serif;
+}
+body{
+    height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+}
+.mante{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.contant{
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+  }
+.queue{
+    background-color: black;
+    width: 7px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  h1{
+    margin: 10px;
+    font-size: 50px;
+    
+  }
+
+.display{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: #000;
+    pointer-events: none;
+    font-family: 'Digital-7 Mono';
+}
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('./ressource/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 20px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.buttons{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+}
+.buttons button:active{
+    transform: scale(0.99);
+}
+.operator{
+    color: #2f9fff;
+}
+.conte {
+    max-width: 900px;
+    width: 100%;
+    padding: 10px 20px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    margin-left:250px ;
+}
+.conte h1{
+    color: #d4d9e8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Pour les téléphones en mode portrait */
+@media only screen and (max-width: 480px) {
+    body {
+        align-items: flex-start; /* Aligner le corps en haut */
+    }
+    .mante {
+        flex-direction: column; /* Modifier la direction de la flexbox */
+    }
+    .contant {
+        margin: 0; /* Réinitialiser la marge */
+    }
+    .contant h1{
+        font-size: 45px;
+    }
+    .queue {
+        height: 160px; /* Ajuster la hauteur de la queue */
+        margin-top: 10px;
+    }
+    
+    .container {
+        max-width: 320px;
+        margin-bottom: 20px; /* Réduire la largeur du conteneur */
+    }
+    .conte {
+        max-width: 320px; /* Réduire la largeur du conteneur */
+        margin: 0 auto; /* Centrer le conteneur */
+    }
+    .conte h1 {
+        font-size: 24px; /* Réduire la taille de la police pour les titres */
+        
+    }
+}
+
+
+
+
+
+
+
+
